@@ -1,0 +1,115 @@
+
+
+eliminate_row init with fast, swapping 5 and 1
+
+in eliminate_row,
+largest_clique found in pre_subset: 1
+in data: 
+[[1 1 1 0 0 0]
+ [1 1 1 1 1 0]
+ [1 1 1 0 0 0]
+ [0 1 0 1 1 0]
+ [0 1 0 1 1 0]
+ [0 0 0 0 0 1]]
+data after aligning ones: 
+[[1 1 1 0 0 0]
+ [1 1 1 1 1 0]
+ [1 1 1 0 0 0]
+ [0 1 0 1 1 0]
+ [0 1 0 1 1 0]
+ [0 0 0 0 0 1]]
+pre_subset: 
+[[1]]
+subset: 
+[[1]]
+new set: 
+[[1 1 1 1 0]
+ [1 1 0 0 0]
+ [1 0 1 1 0]
+ [1 0 1 1 0]
+ [0 0 0 0 1]]
+
+
+eliminate_row init with fast, swapping 4 and 4
+
+in eliminate_row,
+largest_clique found in pre_subset: 1
+in data: 
+[[1 1 1 1 0]
+ [1 1 0 0 0]
+ [1 0 1 1 0]
+ [1 0 1 1 0]
+ [0 0 0 0 1]]
+data after aligning ones: 
+[[1 1 1 1 0]
+ [1 1 0 0 0]
+ [1 0 1 1 0]
+ [1 0 1 1 0]
+ [0 0 0 0 1]]
+pre_subset: 
+[[1]]
+subset: 
+[[1]]
+new set: 
+[[1 0 0 0]
+ [0 1 1 0]
+ [0 1 1 0]
+ [0 0 0 1]]
+
+
+eliminate_row init with fast, swapping 5 and 5
+
+in eliminate_row,
+largest_clique found in pre_subset: 2
+in data: 
+[[1 1 0 1 1 0]
+ [1 1 1 1 1 1]
+ [0 1 1 1 1 0]
+ [1 1 1 1 0 0]
+ [1 1 1 0 1 0]
+ [0 1 0 0 0 1]]
+data after aligning ones: 
+[[1 1 0 1 1 0]
+ [1 1 1 0 1 0]
+ [0 1 1 1 1 0]
+ [1 0 1 1 1 0]
+ [1 1 1 1 1 1]
+ [0 0 0 0 1 1]]
+pre_subset: 
+[[1 1]
+ [1 1]]
+subset: 
+[[1]]
+new set: 
+[[1 0 1 1 0]
+ [0 1 1 1 0]
+ [1 1 1 0 0]
+ [1 1 0 1 0]
+ [0 0 0 0 1]]
+
+
+eliminate_row init with fast, swapping 4 and 4
+
+in eliminate_row,
+largest_clique found in pre_subset: 1
+in data: 
+[[1 0 1 1 0]
+ [0 1 1 1 0]
+ [1 1 1 0 0]
+ [1 1 0 1 0]
+ [0 0 0 0 1]]
+data after aligning ones: 
+[[1 0 1 1 0]
+ [0 1 1 1 0]
+ [1 1 1 0 0]
+ [1 1 0 1 0]
+ [0 0 0 0 1]]
+pre_subset: 
+[[1]]
+subset: 
+[[1]]
+new set: 
+[[1 1 1 0]
+ [1 1 0 0]
+ [1 0 1 0]
+ [0 0 0 1]]
