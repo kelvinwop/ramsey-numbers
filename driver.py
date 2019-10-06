@@ -10,14 +10,14 @@ profile=False
 def main():
     np.set_printoptions(threshold=sys.maxsize, linewidth=np.inf)
     print("working")
-    for g in range(18,19):
+    for g in range(1,19):
         ss = 999999
         se = None
         found = dict()
         found["total"] = 0
         times = []
         last_i_written = 0
-        for i in tqdm(range(100000)):  # tqdm for progress bars
+        for i in tqdm(range(1000000)):  # tqdm for progress bars
             a = graph.Graph(g)
 
             start_time = time.time()
@@ -47,7 +47,7 @@ def main():
         my_str += "\n" + json.dumps(found, sort_keys=True, indent=4, separators=(',', ': '))
         my_str += "\nhashtable(array) stats\n" + json.dumps(a.lt_stats, sort_keys=True, indent=4, separators=(',', ': '))
         #print(my_str)
-        with open("output.txt", "w+") as f:
+        with open("output%s.txt" % g, "w+") as f:
             f.write(my_str)
 
         print("nodes: %s, average time: %s" % (g, str(np.average(times))))
